@@ -79,3 +79,11 @@ string res = Regex.Replace(input1, @"(\D)\1+", g =>
       return "X";
   });
 Console.WriteLine(res);
+
+
+var identifier = "this-is-a-try";
+matches = Regex.Matches(identifier, @"\-.{1}");
+foreach (Match m in matches)
+{
+    Console.WriteLine($"index:{m.Index}  group:\"{m.Groups[0].Captures[0].Value}\"  value:\"{m.Value}\"");
+}
