@@ -1,2 +1,2 @@
 # csharp-training
-Training C# with .NET6
+Training C# with .NET
